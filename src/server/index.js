@@ -1,9 +1,3 @@
-import express from 'express';
+import someHelper from './someHelper';
 
-const app = express();
-
-app.get('/', (req, res) => {
-	res.send('Hello stuff.');
-});
-
-app.listen(9090, () => { console.info('Listening on :9090'); });
+someHelper();
